@@ -79,7 +79,7 @@
     "tooltip": false
   },
   "custom/media-play": {
-    "exec": "playerctl status -F | sed -u 's/Playing/󰐊/;s/Paused/󰏤/;s/Stopped/󰏤/'",
+    "exec": "playerctl status -F | sed -u 's/Playing/󰏤/;s/Paused//;s/Stopped/󰐊/'",  
     "return-type": "raw",
     "on-click": "playerctl play-pause",
     "tooltip": false
