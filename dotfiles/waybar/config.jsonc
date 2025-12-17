@@ -8,9 +8,13 @@
   "margin-top": 4,
   "margin-bottom": 0,
   "height": 26,
-  "modules-left": ["custom/omarchy", "hyprland/workspaces"],
+  "modules-left": ["custom/omarchy", "hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
+    "custom/media-prev",
+    "custom/media-play",
+    "custom/media-next",
+    "custom/media-title",
     "group/tray-expander",
     "bluetooth",
     "network",
@@ -35,6 +39,17 @@
       "10": "0",
       "active": "󱓻"
     },
+    "hyprland/window": {
+     "format": "{title}",
+     "max-length": 45,
+     "separate-outputs": true,
+     "rewrite": {
+       "(.*) — Mozilla Firefox$": "  $1",
+       "(.*) - Visual Studio Code$": "󰨞  $1",
+       "(.*) - kitty$": "󰄛  $1"
+     },
+     "tooltip": false
+  },
     "persistent-workspaces": {
       "1": [],
       "2": [],
@@ -57,6 +72,30 @@
     "signal": 7,
     "interval": 3600
   },
+
+  "custom/media-prev": {
+    "format": "󰒮   ",
+    "on-click": "playerctl previous",
+    "tooltip": false
+  },
+  "custom/media-play": {
+    "exec": "playerctl status -F | sed -u 's/Playing/󰐊/;s/Paused/󰏤/;s/Stopped/󰏤/'",
+    "return-type": "raw",
+    "on-click": "playerctl play-pause",
+    "tooltip": false
+  },
+  "custom/media-next": {
+    "format": "   󰒭  ",
+    "on-click": "playerctl next",
+    "tooltip": false
+  },
+  "custom/media-title": {
+    "exec": "playerctl metadata title -F",
+    "return-type": "raw",
+    "max-length": 30,
+    "tooltip": true
+  },
+ 
 
   "cpu": {
     "interval": 5,
@@ -130,7 +169,7 @@
     "modules": ["custom/expand-icon", "tray"]
   },
   "custom/expand-icon": {
-    "format": " ",
+    "format": "     ",
     "tooltip": false
   },
   "custom/screenrecording-indicator": {
