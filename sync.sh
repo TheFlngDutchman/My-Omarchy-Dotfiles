@@ -5,8 +5,10 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DOTFILES_DIR="$REPO_DIR/dotfiles"
 CONFIG_DIR="$HOME/.config"
 
-# Collect all tracked files relative to dotfiles/
-mapfile -t FILES < <(find "$DOTFILES_DIR" -type f | sed "s|$DOTFILES_DIR/||" | sort)
+# Collect all tracked files relative to dotfiles/ (skip backups/editor junk)
+mapfile -t FILES < <(find "$DOTFILES_DIR" -type f \
+    ! -name '*.bak' ! -name '*.bak.*' ! -name '*~' ! -name '*.swp' \
+    | sed "s|$DOTFILES_DIR/||" | sort)
 
 if [[ ${#FILES[@]} -eq 0 ]]; then
     echo "No dotfiles found in $DOTFILES_DIR"
