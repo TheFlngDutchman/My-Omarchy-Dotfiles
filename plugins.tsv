@@ -1,0 +1,15 @@
+# id	source	commit	enabled
+abran-labs.notification-center	git:https://github.com/abran-labs/omarchy-notification-center.git	12ca2f8da1776017c705ea6d147cb9c168c9adde	y
+akitaonrails.ai-usagebar	git:https://github.com/akitaonrails/ai-usagebar.git	f31178fa90240ed2a0fa6051eca9a29b5c39e28b	y
+crmne.hyprmoncfg	git:https://github.com/crmne/omarchy-hyprmoncfg.git	1ba6b752cacdff5983ecf0782f4e5777ccfa1432	n
+dizziee.power-profiles	git:https://github.com/JJDizz1L/dizziee.power-profiles.git	e790fd60a019903a1f2314d97fede36cd04d0a03	n
+dizziee.system-stats	git:https://github.com/JJDizz1L/dizziee.system-stats.git	5500990ce9da1d732e58876886c52181d68923cf	n
+io.github.iamfitsum.omarchy-proton-vpn	git:https://github.com/iamfitsum/omarchy-proton-vpn.git	aa5c1b2853d99e7833170f6f1cd34b6e61a12dcd	y
+io.github.qadram.nvme-health	git:https://github.com/qadram/omarchy-nvme-health.git	f15f1aab2db33cd13f4b2d8db09afcfbaf095312	n
+io.github.r-witz.nothing-ear	git:https://github.com/r-witz/omarchy-nothing-ear.git	6372853e81a7947b0bbfb0bd0962428cba4271ce	y
+io.github.theflngdutchman.app-grid	git:https://github.com/TheFlngDutchman/omarchy-app-grid.git	e877f9ebbad13a5da6b5cfc084e6deee7b019557	y
+io.github.theflngdutchman.blobs	vendored	-	y
+io.github.theflngdutchman.dashboard-dl	git:https://github.com/TheFlngDutchman/omarchy-dashboard-dl.git	bf4c83f0dbef2f1a2588cf6d9923bafbe731a739	y
+quattro.indicators-drawer	git:https://github.com/TheFlngDutchman/quattro-indicators-drawer.git	089fc571b3f85c75ff9e80ab6f8d7685ebd847bd	y
+shobert.network	vendored	-	y
+ssupt.bluetooth-audio	git:https://github.com/ssupt/omarchy-bluetooth-audio.git	4c8b0792f4ded73bff08e80f9c1ef069a1f2612c	n

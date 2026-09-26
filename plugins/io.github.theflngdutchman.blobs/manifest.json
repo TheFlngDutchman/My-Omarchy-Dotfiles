@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.theflngdutchman.blobs",
+  "name": "Blobs",
+  "version": "1.0.0",
+  "author": "TheFlngDutchman",
+  "license": "MIT",
+  "description": "Offline agar-style blob game: eat pellets, dodge bigger blobs, split and eject to outsmart the bots. No network, no external programs.",
+  "kinds": [
+    "bar-widget",
+    "overlay"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "overlay": "Overlay.qml"
+  },
+  "barWidget": {
+    "displayName": "Blobs",
+    "description": "Bar button that opens the Blobs game overlay",
+    "category": "Fun",
+    "defaultSection": "right",
+    "allowMultiple": false,
+    "aliases": ["blobs", "agar"],
+    "defaults": {
+      "bots": 10,
+      "highScore": 0
+    },
+    "schema": [
+      {
+        "key": "bots",
+        "type": "integer",
+        "label": "Number of bots",
+        "description": "How many AI blobs share the arena with you.",
+        "min": 2,
+        "max": 24,
+        "step": 1,
+        "defaultValue": 10
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "audioOnly": true,
+  "confirmFirst": false,
+  "audioDir": "~/Music",
+  "videoDir": "~/Videos",
+  "ytdlpPath": "",
+  "extraOrigins": []
+}

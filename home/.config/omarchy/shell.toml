@@ -1,0 +1,7 @@
+[font]
+base-size = 12
+
+[bar]
+# 1.2x the stock 26px, at the default 12px base size. Style.barToken multiplies
+# this by the font scale, so it tracks base-size like every other bar dimension.
+size-horizontal = 31
